@@ -6,5 +6,7 @@
 
 * Меня больше интересует не столько решение конкретных ошибок, с которыми я столкнулся, сколько вероятность возникновения ошибок на стороне пользователя в будущем. Ожидается, что следуя указаниям документации, разработчик сможет без труда запустить проект. Однако наличие ошибок на столь раннем этапе использования библиотеки вызывает сомнения в ее стабильности и надежности.
 
+**Краткое описание бага (полную картину вы можете наблюдать в блокноте №1-2):** я использую самую новую версию библеотеки llama-Index и llama-index-llms-fireworks, но при обращении `from llama_index.llms.fireworks import Fireworks` у меня возникают две ошибки импорта: `cannot import name 'global_handler' from 'llama_index.core' (unknown location)` и `ImportError: cannot import name 'Secret' from 'pydantic'`.
+
 1. **[Блокнот](https://github.com/hherpa/LlamaIndex-Version-Issues-RU/blob/main/cannot_import_name_Secret_from_pydantic.ipynb) с первой ошибкой**
 2. **[Блокнот](https://github.com/hherpa/LlamaIndex-Version-Issues-RU/blob/main/cannot_import_name_global_handler_from_llama_index.ipynb) с второй ошибкой**
