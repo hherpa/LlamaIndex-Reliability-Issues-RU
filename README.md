@@ -1,4 +1,4 @@
-# Проблемы с версиями в LlamaIndex
+# Проблема надежности/проблемы с версиями в LlamaIndex
 
 Из-за ужасной документации и парой грубого отсутствия оптимизации для разработчиков, о чем я подробно писал в [LangChain-ToolDocs-Problem-ru](https://github.com/hherpa/LangChain-ToolDocs-Problem-ru-), и в ожидании ответа на мой [issue](https://github.com/langchain-ai/langchain/issues/27668), мне пришлось перейти с LangChain на LLamaIndex. Однако здесь сразу возникли сложности: первые три строки [документации](https://llamahub.ai/l/llms/llama-index-llms-fireworks?from=llms) — две строки для установки библиотеки и строка `from llama_index.llms.fireworks import Fireworks` — привели меня сразу к двум ошибкам.
 
