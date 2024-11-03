@@ -1,6 +1,6 @@
 # Проблема надежности/проблемы с версиями в LlamaIndex
 
-* **Issue:** https://github.com/run-llama/llama_index/issues/16774
+* **Issue №1:** https://github.com/run-llama/llama_index/issues/16774
 
 Из-за ужасной документации и порой грубого отсутствия оптимизации для разработчиков, о чем я подробно писал в [LangChain-ToolDocs-Problem-ru](https://github.com/hherpa/LangChain-ToolDocs-Problem-ru-), и в ожидании ответа на мой [issue](https://github.com/langchain-ai/langchain/issues/27668), мне пришлось перейти с LangChain на LLamaIndex. Однако здесь сразу возникли сложности: первые три строки [документации](https://llamahub.ai/l/llms/llama-index-llms-fireworks?from=llms) — две строки для установки библиотеки и строка `from llama_index.llms.fireworks import Fireworks` — привели меня сразу к двум ошибкам.
 
@@ -73,3 +73,7 @@ ValueError: Did not find api_key, please add an environment variable FIREWORKS_A
 
 оказывается сам код в документации (при чем на нескольких страницах) llama_index был с ошибкой, но этого никто не замечал.
 * **PR & Fix:** https://github.com/run-llama/llama_index/pull/16794
+
+Мы недавно закрыли issue по поводу API Fireworks, где также обсуждалась возможная ненадежность `llama_index`. Теперь я приступил к изучению API Groq и запустил код из [документации](https://docs.llamaindex.ai/en/stable/examples/llm/groq/). Вы можете увидеть возникшую ошибку и соответствующий код в этом [блокноте](https://github.com/hherpa/LlamaIndex-Reliability-Issues/blob/main/PermissionDeniedError.ipynb).
+
+* **Issue №2:** https://github.com/run-llama/llama_index/issues/16796
