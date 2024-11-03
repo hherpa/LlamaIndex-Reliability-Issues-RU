@@ -71,5 +71,5 @@ File ~\AppData\Roaming\Python\Python311\site-packages\llama_index\core\base\llms
 ValueError: Did not find api_key, please add an environment variable FIREWORKS_API_KEY which contains it, or pass  api_key as a named parameter.
 ```
 
-оказывается сам код в документации (при чем на нескольких страницах) llama_index был с ошибкой, но этого никто не замечал. За место `resp = Fireworks().complete("...")` должно было быть `resp = llm.complete("...")`
+оказывается сам код в документации (при чем на нескольких страницах) llama_index был с ошибкой, но этого никто не замечал.
 * **PR & Fix:** https://github.com/run-llama/llama_index/pull/16794
